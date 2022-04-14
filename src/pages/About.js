@@ -1,9 +1,9 @@
-import Navbar from "../components/Navbar"
+import LinkButton from "../components/LinkButton"
 
 const About = () => {
   return (
     <div>
-      <Navbar />
+      <LinkButton name="Home" path="/" />
     </div>
   )
 }
