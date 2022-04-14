@@ -1,9 +1,9 @@
 import "./index.scss";
 
-const SearchField = ({ city, setCity }) => {
+const SearchField = ({ city, setCity, onPress }) => {
     return (
         <div>
-            <input onChange={event => setCity(event.target.value)} type="text" value={city} placeholder="Enter city" />
+            <input onChange={event => setCity(event.target.value)} onKeyPress={onPress} type="text" value={city} placeholder="Enter city" />
         </div>
     )
 }
