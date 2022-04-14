@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import SearchField from "../components/SearchField"
 import LinkButton from "../components/LinkButton"
 import WeatherDescription from "../components/WeatherDescription"
+import WeatherInformation from "../components/WeatherInformation"
 
 const Homepage = () => {
   const [city, setCity] = useState('berlin')
@@ -27,6 +28,7 @@ const Homepage = () => {
       <LinkButton name="About" path="/about" />
       <SearchField city={city} setCity={(value) => setCity(value)} />
       {weatherData ? <WeatherDescription weatherData={weatherData} /> : ""}
+      {weatherData ? <WeatherInformation weatherData={weatherData} /> : ""}
     </div>
   )
 }
