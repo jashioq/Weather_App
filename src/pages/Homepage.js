@@ -6,7 +6,7 @@ import WeatherDescription from "../components/WeatherDescription"
 import WeatherInformation from "../components/WeatherInformation"
 
 const Homepage = () => {
-  const [city, setCity] = useState('')
+  const [city, setCity] = useState('Globe')
   const [weatherData, setWeatherData] = useState(null)
 
   const API_KEY = "763b782a1fdd9b7b8f0c5bf2979dee4b"
@@ -18,6 +18,10 @@ const Homepage = () => {
         ? `url('./images/${weatherData.weather[0].icon}.png')`
         : "url('./images/02d.png')"
   }, [weatherData])
+
+  useEffect(() => {
+    fetchWeather()
+  }, [])
 
   const fetchWeather = async () => {
     const response = await fetch(API_URL);

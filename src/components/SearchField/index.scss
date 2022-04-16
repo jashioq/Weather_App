@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+input {
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    width: 35%;
+    height: 5%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    mix-blend-mode: screen;
+    backdrop-filter: blur(20px);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 10px;
+
+    &::placeholder {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
