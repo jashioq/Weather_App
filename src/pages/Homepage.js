@@ -12,7 +12,7 @@ const Homepage = () => {
   const API_KEY = "763b782a1fdd9b7b8f0c5bf2979dee4b"
   const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
 
-  useEffect(() => {
+  useEffect(() => {  // Dynamic backrounds
     document.body.style.backgroundImage =
       weatherData
         ? `url('./images/${weatherData.weather[0].icon}.png')`

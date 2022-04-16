@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container {
+    position: absolute;
+    display: grid;
+    grid-template-rows: auto auto;
+    right: 0;
+    top: 0;
+    width: 35%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(245, 242, 242);
+    font-size: 16px;
+}
+
+p {
+    color: rgb(208, 207, 207);
+}
