@@ -1,0 +1,24 @@
+.app-description {
+    position: absolute;
+    left: 22%;
+    bottom: 0;
+    padding: 0 3%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    mix-blend-mode: screen;
+    backdrop-filter: blur(20px);
+
+    p {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        line-height: 1.8;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-style: italic;
+        }
+    }
+}
