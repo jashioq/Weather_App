@@ -4,17 +4,24 @@ const WeatherInformation = ({ weatherData }) => {
 
     return (
         <div className="container">
-            <div classname="temperature-info">
-                <h1>Temperature</h1>
-                <p>Max: {Math.round(weatherData.main.temp_max)}</p>
-                <p>Min: {Math.round(weatherData.main.temp_min)}</p>
-                <p>Feels like: {Math.round(weatherData.main.feels_like)}</p>
+            <h1>Temperature</h1>
+            <div className="temperature-info">
+                <p>Max:</p>
+                <p>{Math.round(weatherData.main.temp_max)} ℃</p>
+                <p>Min:</p>
+                <p>{Math.round(weatherData.main.temp_min)} ℃</p>
+                <p>Feels like:</p>
+                <p>{Math.round(weatherData.main.feels_like)} ℃</p>
             </div>
+            <hr />
+            <h1>Details</h1>
             <div className="details-info">
-                <h1>Details</h1>
-                <p>Atmospheric pressure: {weatherData.main.pressure}</p>
-                <p>Air humidity: {weatherData.main.humidity}</p>
-                <p>Wind Speed: {weatherData.wind.speed}</p>
+                <p>Atmospheric pressure:</p>
+                <p>{weatherData.main.pressure} hPa</p>
+                <p>Air humidity:</p>
+                <p>{weatherData.main.humidity} %</p>
+                <p>Wind Speed:</p>
+                <p>{Math.round(weatherData.wind.speed)} kph</p>
             </div>
         </div>
     )

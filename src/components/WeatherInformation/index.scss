@@ -4,22 +4,49 @@
     position: absolute;
     display: grid;
     grid-template-rows: auto auto;
+    align-items: center;
     right: 0;
     top: 0;
     width: 35%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.03);
+    background-color: rgba(255, 255, 255, 0.1);
+    mix-blend-mode: screen;
     backdrop-filter: blur(20px);
-
     font-family: 'Roboto', sans-serif;
-    text-align: center;
 }
 
 h1 {
-    color: rgb(245, 242, 242);
-    font-size: 16px;
+    display: flex;
+    color: #fff;
+    mix-blend-mode: difference;
+    font-size: 26px;
+    padding-left: 45px;
 }
 
 p {
-    color: rgb(208, 207, 207);
+    font-size: 18px;
+    color: #fff;
+}
+
+hr {
+    width: 90%;
+}
+
+.temperature-info {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding-left: 45px;
+    align-items: center;
+    line-height: 3;
+
+}
+
+.details-info {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto auto auto;
+    padding-left: 45px;
+    align-items: center;
+    line-height: 3;
+
 }

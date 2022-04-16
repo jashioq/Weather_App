@@ -1,6 +1,29 @@
 .container-desc {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    border: 3px solid green;
+    left: 15%;
+    bottom: 15%;
+    width: 35%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 60% 40%;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    mix-blend-mode: screen;
+    backdrop-filter: blur(20px);
+    font-family: 'Roboto', sans-serif;
+}
+
+.temperature-main {
+    font-size: 96px;
+    grid-row: 1 / span 2;
+    justify-self: center;
+}
+
+.city-name {
+    font-size: 42px;
+}
+
+.weather-desc {
+    font-size: 22px;
 }
