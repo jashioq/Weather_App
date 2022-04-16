@@ -1,4 +1,5 @@
 import LinkButton from "../components/LinkButton"
+import "./About.scss"
 
 const About = () => {
   return (

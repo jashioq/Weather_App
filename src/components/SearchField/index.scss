@@ -23,4 +23,8 @@ input {
     &:focus {
         outline: none;
     }
+
+    &:hover {
+        background-color: rgba(94, 93, 93, 0.35);
+    }
 }
