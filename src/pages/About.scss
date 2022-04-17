@@ -22,3 +22,15 @@
         }
     }
 }
+
+@media (max-width: 700px) {
+    .app-description {
+        width: 94%;
+        height: auto;
+        left: 0;
+
+        p {
+            font-size: 48px;
+        }
+    }
+}
