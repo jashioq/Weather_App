@@ -20,7 +20,7 @@ const WeatherInformation = ({ weatherData }) => {
                 <p>{weatherData.main.pressure} hPa</p>
                 <p>Air humidity:</p>
                 <p>{weatherData.main.humidity} %</p>
-                <p>Wind Speed:</p>
+                <p>Wind speed:</p>
                 <p>{Math.round(weatherData.wind.speed)} kph</p>
             </div>
         </div>

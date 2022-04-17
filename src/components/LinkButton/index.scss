@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-button {
+.link-button {
     position: absolute;
     top: 3%;
     left: 2%;
     width: 7%;
+    min-width: 100px;
     height: 5%;
     color: #fff;
     border: none;
@@ -16,5 +17,12 @@ button {
 
     &:hover {
         background-color: rgba(94, 93, 93, 0.35);
+    }
+
+}
+
+@media (max-width: 700px) {
+    .link-button {
+        left: 5%;
     }
 }

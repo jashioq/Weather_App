@@ -4,6 +4,7 @@ import SearchField from "../components/SearchField"
 import LinkButton from "../components/LinkButton"
 import WeatherDescription from "../components/WeatherDescription"
 import WeatherInformation from "../components/WeatherInformation"
+import MobileSearchButton from "../components/MobileSearchButton"
 
 const Homepage = () => {
   const [city, setCity] = useState('Globe')
@@ -36,10 +37,10 @@ const Homepage = () => {
     }
   }
 
-
   return (
     <div>
       <LinkButton name="About" path="/about" />
+      <MobileSearchButton onClick={fetchWeather} />
       <SearchField city={city} setCity={(value) => setCity(value)} onPress={handleCitySearch} />
       {weatherData ? <WeatherDescription weatherData={weatherData} /> : ""}
       {weatherData ? <WeatherInformation weatherData={weatherData} /> : ""}

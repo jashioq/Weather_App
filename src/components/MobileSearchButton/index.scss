@@ -1,38 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-input {
+.search-button {
     position: absolute;
-    left: 15%;
-    top: 15%;
-    width: 35%;
+    top: 3%;
+    right: 5%;
+    width: 100px;
     height: 5%;
+    color: #fff;
     border: none;
     background-color: rgba(255, 255, 255, 0.2);
     mix-blend-mode: screen;
     backdrop-filter: blur(20px);
     font-family: 'Roboto', sans-serif;
-    color: #fff;
     font-size: 16px;
-    padding-left: 10px;
-
-    &::placeholder {
-        color: #fff;
-        font-size: 16px;
-    }
-
-    &:focus {
-        outline: none;
-    }
 
     &:hover {
         background-color: rgba(94, 93, 93, 0.35);
     }
 }
 
-@media (max-width: 700px) {
-    input {
-        left: 5%;
-        right: 5%;
-        width: auto;
+@media (min-width: 700px) {
+    .search-button {
+        visibility: hidden;
     }
 }

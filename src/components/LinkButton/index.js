@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const LinkButton = ({ path, name }) => {
     return (
         <Link to={path}>
-            <button>
+            <button className="link-button">
                 {name}
             </button>
         </Link>
