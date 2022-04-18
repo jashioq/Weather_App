@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    document.title = 'SortSee';
+    document.title = "Jan's weather app";
   }, []);
   return (
     <Homepage />
