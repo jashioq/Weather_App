@@ -2,7 +2,7 @@
   "homepage": "https://jashioq.github.io/Weather_App",
   "name": "weather_app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",

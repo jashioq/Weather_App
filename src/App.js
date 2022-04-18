@@ -1,19 +1,12 @@
 import Homepage from './pages/Homepage';
-import About from './pages/About';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = 'SortSee';
+  }, []);
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Homepage />}/>
-        <Route path="about" element={<About />}/>
-      </Routes>
-    </BrowserRouter>
+    <Homepage />
   );
 }
 

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import "./Homepage.scss"
 import SearchField from "../components/SearchField"
-import LinkButton from "../components/LinkButton"
 import WeatherDescription from "../components/WeatherDescription"
 import WeatherInformation from "../components/WeatherInformation"
 import MobileSearchButton from "../components/MobileSearchButton"
@@ -16,9 +15,9 @@ const Homepage = () => {
   useEffect(() => {  // Dynamic backrounds
     document.body.style.backgroundImage =
       weatherData
-        ? `url('./images/${weatherData.weather[0].icon}.png')`
-        : "url('./images/02d.png')"
-  }, [weatherData])
+        ? `url('images/${weatherData.weather[0].icon}.png')`
+        : "url('images/02d.png')"
+  }, [weatherData, city])
 
   useEffect(() => {
     fetchWeather()
@@ -39,7 +38,6 @@ const Homepage = () => {
 
   return (
     <div>
-      <LinkButton name="About" path="/about" />
       <MobileSearchButton onClick={fetchWeather} />
       <SearchField city={city} setCity={(value) => setCity(value)} onPress={handleCitySearch} />
       {weatherData ? <WeatherDescription weatherData={weatherData} /> : ""}
